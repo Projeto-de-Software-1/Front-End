@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html class="cadastro">
+
+<head>
+    <title>Cadastro</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.11.1/jquery.validate.js"></script>
+    <script src="http://ajax.microsoft.com/ajax/jquery.validate/1.11.1/additional-methods.js"></script>
+
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+
+<style>
+    a.btn {
+        margin-top: 30%;
+    }
+
+    .modal {
+        height: 37%;
+        width: 35%;
+    }
+
+    .input-field {
+        width: 50%;
+
+    }
+</style>
+
+<body>
+    <div class="valign-wrapper">
+        <div class="row">
+            <h4 class="light center">Cadastro</h4>
+            <form id="formulario" action="#">
+                <div class="input-field col s12">
+                    <input type="text" id="username" required="" aria-required="true">
+                    <label for="username">Usuário</label>
+                </div>
+                <div class="input-field col s12">
+                    <input type="email" id="email" required="" aria-required="true">
+                    <label for="email">Email</label>
+                </div>
+                <div class="input-field col s12">
+                    <input type="password" id="senha" required="" aria-required="true">
+                    <label for="senha">Senha</label>
+                </div>
+                <div class="input-field col s12">
+                    <input type="text" class="datepicker" id="nascimento" required="" aria-required="true">
+                    <label for="nascimento">Data de Nascimento</label>
+                </div>
+                <input style="display: inline" type="submit" value="Cadastrar" class="btn">
+            </form>
+            <a href="index.html" class="btn">Voltar</a>
+        </div>
+    </div>
+
+    <link type="text/javascript" rel="sidenav" href="/js/sidenav.js" />
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+</body>
+
+</html>
