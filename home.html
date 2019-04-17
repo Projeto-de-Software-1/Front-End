@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html class="login">
+
+<head>
+    <title>Login</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+
+
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+
+<style>
+    a.btn {
+        margin-top: 30%;
+    }
+
+    input[type="submit"] {
+        width: 100%;
+    }
+
+    .modal {
+        height: 37%;
+        width: 35%;
+    }
+
+    .modal-close {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        margin: 0;
+        padding: 0;
+    }
+</style>
+
+<body>
+    <main>
+        <!--NAVBAR -->
+        <nav>
+            <div class="nav-wrapper">
+                <a href="index.html" class="brand-logo">Bricacademy</a>
+                <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+                <ul class="right hide-on-med-and-down">
+                    <li>
+                        <form id="navbarsearch">
+                            <div class="navfix">
+                                <div id="navfix2">
+                                    <div class="input-field">
+                                        <input id="search" type="search" placeholder="Buscando algo?"
+                                            onfocus="this.placeholder='Digite o nome da publicação...'"
+                                            onfocusout="this.placeholder='Buscando algo?'">
+                                        <label class="label-icon" for="search"><i
+                                                class="material-icons">search</i></label>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </li>
+                    <li>
+                    <li class="active"><a href="cadastro.html"><i class="material-icons right">home</i>Home</a></li>
+                    <li><a href="descobertas.html"><i class="material-icons right">explore</i>Explorar</a></li>
+                    <li><a href="biblioteca.html"><i class="material-icons right">library_books</i>Minha Biblioteca</a>
+                    </li>
+                    <li><a href="anuncios.html"><i class="material-icons right">reorder</i>Meus Anúncios</a></li>
+                    <li><a href="perfil.html"><i class="material-icons right">person</i>Perfil</a></li>
+                    <li><a href="logout.html"><i class="material-icons right">exit_to_app</i>Logout</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        
+    <div class="container">
+            <div class="row">
+              <div class="col s4">
+                <h2>
+                  Teste
+                </h2>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque in placerat leo, sed semper nunc. Maecenas
+                  eget consequat erat. Vivamus ac dolor eget dui auctor commodo eget non tellus. Cras mattis urna justo, eget
+                  tempor urna volutpat et. Vestibulum ultricies diam nec convallis commodo. Nullam at rhoncus ligula. Aliquam
+                  tempor libero sit amet ex hendrerit bibendum. Nulla vitae cursus elit, a condimentum est. Duis sed orci
+                  nibh.
+                  Phasellus et turpis placerat, vestibulum lorem in, sodales lacus. Nam ultricies varius lorem, id vestibulum
+                  enim tempus ut. Sed sagittis lacus eu eros vulputate, iaculis vulputate mauris pulvinar. Nam eget feugiat
+                  diam. Etiam lacus ex, pharetra eget finibus sed, pulvinar dictum sapien.
+                </p>
+              </div>
+              <div class="col s4">
+                <h2>
+                  Teste
+                </h2>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque in placerat leo, sed semper nunc. Maecenas
+                  eget consequat erat. Vivamus ac dolor eget dui auctor commodo eget non tellus. Cras mattis urna justo, eget
+                  tempor urna volutpat et. Vestibulum ultricies diam nec convallis commodo. Nullam at rhoncus ligula. Aliquam
+                  tempor libero sit amet ex hendrerit bibendum. Nulla vitae cursus elit, a condimentum est. Duis sed orci
+                  nibh.
+                  Phasellus et turpis placerat, vestibulum lorem in, sodales lacus. Nam ultricies varius lorem, id vestibulum
+                  enim tempus ut. Sed sagittis lacus eu eros vulputate, iaculis vulputate mauris pulvinar. Nam eget feugiat
+                  diam. Etiam lacus ex, pharetra eget finibus sed, pulvinar dictum sapien.
+                </p>
+              </div>
+              <div class="col s4">
+                <h2>
+                  Teste
+                </h2>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque in placerat leo, sed semper nunc. Maecenas
+                  eget consequat erat. Vivamus ac dolor eget dui auctor commodo eget non tellus. Cras mattis urna justo, eget
+                  tempor urna volutpat et. Vestibulum ultricies diam nec convallis commodo. Nullam at rhoncus ligula. Aliquam
+                  tempor libero sit amet ex hendrerit bibendum. Nulla vitae cursus elit, a condimentum est. Duis sed orci
+                  nibh.
+                  Phasellus et turpis placerat, vestibulum lorem in, sodales lacus. Nam ultricies varius lorem, id vestibulum
+                  enim tempus ut. Sed sagittis lacus eu eros vulputate, iaculis vulputate mauris pulvinar. Nam eget feugiat
+                  diam. Etiam lacus ex, pharetra eget finibus sed, pulvinar dictum sapien.
+                </p>
+              </div>
+            </div>
+          </div>
+        </main>
+      
+        <div id="footer"></div>
+
+        <script>
+            $(document).ready(function () {
+
+                var trig = 1;
+
+                $('#search').click(function (e) {
+                    if (trig == 1) {
+                        $('#navfix2').animate({
+                            width: '+=55',
+                            marginRight: 0
+                        }, 400);
+
+                        trig++;
+                    }
+
+                });
+
+                // if user leaves the form the width will go back to original state
+
+                $("#search").focusout(function () {
+                    $('#navfix2').animate({
+                        width: '-=55'
+                    }, 400);
+                    trig = trig - 1;
+
+                });
+                $("#footer").load("footer.html");
+            });
+
+        </script>
+
+
+        <link type="text/javascript" rel="sidenav" href="/js/sidenav.js" />
+        <script type="text/javascript" src="js/materialize.min.js"></script>
+
+</body>
+
+</html>
