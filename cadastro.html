@@ -15,8 +15,8 @@
 
 <style>
     a.btn {
-        width:49%;
-        margin-top:3%;
+        width: 49%;
+        margin-top: 3%;
     }
 
     .modal {
@@ -31,33 +31,35 @@
 </style>
 
 <body>
-    <div class="valign-wrapper">
-        <div class="row">
-            <h4 class="light center">Cadastro</h4>
-            <form id="formulario" name="formulario" action="#">
-                <div class="input-field col s12">
-                    <input type="text" id="username" required="" aria-required="true">
-                    <label for="username">Usuário</label>
-                </div>
-                <div class="input-field col s12">
-                    <input type="email" id="email" required="" aria-required="true">
-                    <label for="email">Email</label>
-                </div>
-                <div class="input-field col s12">
-                    <input type="password" id="senha" required="" aria-required="true">
-                    <label for="senha">Senha</label>
-                </div>
-                <div class="input-field col s12">
-                    <input type="text" class="datepicker" id="nascimento" required="" aria-required="true">
-                    <label for="nascimento">Data de Nascimento</label>
-                </div>
-                <div class="btn-group center">
-                    <a href='javascript:formulario.submit()' class="btn">Cadastrar</a>
-                    <a href="index.html" class="btn">Voltar</a>
-                </div>
-            </form>
+    <main>
+        <div class="valign-wrapper">
+            <div class="row">
+                <h4 class="light center">Cadastro</h4>
+                <form id="formulario" name="formulario" action="#">
+                    <div class="input-field col s12">
+                        <input type="text" id="username" required="" aria-required="true">
+                        <label for="username">Usuário</label>
+                    </div>
+                    <div class="input-field col s12">
+                        <input type="email" id="email" required="" aria-required="true">
+                        <label for="email">Email</label>
+                    </div>
+                    <div class="input-field col s12">
+                        <input type="password" id="senha" required="" aria-required="true">
+                        <label for="senha">Senha</label>
+                    </div>
+                    <div class="input-field col s12">
+                        <input type="text" class="datepicker" id="nascimento" required="" aria-required="true">
+                        <label for="nascimento">Data de Nascimento</label>
+                    </div>
+                    <div class="btn-group center">
+                        <a href='javascript:formulario.submit()' class="btn">Cadastrar</a>
+                        <a href="index.html" class="btn">Voltar</a>
+                    </div>
+                </form>
+            </div>
         </div>
-    </div>
+    </main>
 
     <div id="footer"></div>
 
