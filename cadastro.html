@@ -15,7 +15,8 @@
 
 <style>
     a.btn {
-        margin-top: 30%;
+        width:49%;
+        margin-top:3%;
     }
 
     .modal {
@@ -33,7 +34,7 @@
     <div class="valign-wrapper">
         <div class="row">
             <h4 class="light center">Cadastro</h4>
-            <form id="formulario" action="#">
+            <form id="formulario" name="formulario" action="#">
                 <div class="input-field col s12">
                     <input type="text" id="username" required="" aria-required="true">
                     <label for="username">Usuário</label>
@@ -50,11 +51,19 @@
                     <input type="text" class="datepicker" id="nascimento" required="" aria-required="true">
                     <label for="nascimento">Data de Nascimento</label>
                 </div>
-                <input style="display: inline" type="submit" value="Cadastrar" class="btn">
+                <div class="btn-group center">
+                    <a href='javascript:formulario.submit()' class="btn">Cadastrar</a>
+                    <a href="index.html" class="btn">Voltar</a>
+                </div>
             </form>
-            <a href="index.html" class="btn">Voltar</a>
         </div>
     </div>
+
+    <script>
+        $(document).ready(function () {
+            $('#nascimento').datepicker();
+        });
+    </script>
 
     <link type="text/javascript" rel="sidenav" href="/js/sidenav.js" />
     <script type="text/javascript" src="js/materialize.min.js"></script>
