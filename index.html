@@ -26,12 +26,22 @@
     width: 35%;
   }
 
-  .modal-close{
+  .modal-close {
     position: absolute;
     top: 10px;
     right: 10px;
     margin: 0;
     padding: 0;
+  }
+
+  .body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+  }
+
+  .main {
+    flex: 1 0 auto;
   }
 </style>
 
@@ -39,15 +49,63 @@
   <!--NAVBAR -->
   <nav>
     <div class="nav-wrapper">
-      <a href="index.html" class="brand-logo">Projeto de Software 1</a>
+      <a href="index.html" class="brand-logo">Bricacademy</a>
       <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
       <ul class="right hide-on-med-and-down">
-        <li><a href="cadastro.html" class="waves-effect waves-light btn"><i class="material-icons right">person_add</i>Cadastre-se</a></li>
+        <li><a href="cadastro.html" class="waves-effect waves-light btn"><i
+              class="material-icons right">person_add</i>Cadastre-se</a></li>
         <li><a href="#login" class="waves-effect waves-light btn modal-trigger"><i
               class="material-icons right">play_arrow</i>Login</a></li>
       </ul>
     </div>
   </nav>
+
+  <div class="container">
+    <div class="row">
+      <div class="col s4">
+        <h2>
+          Teste
+        </h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque in placerat leo, sed semper nunc. Maecenas
+          eget consequat erat. Vivamus ac dolor eget dui auctor commodo eget non tellus. Cras mattis urna justo, eget
+          tempor urna volutpat et. Vestibulum ultricies diam nec convallis commodo. Nullam at rhoncus ligula. Aliquam
+          tempor libero sit amet ex hendrerit bibendum. Nulla vitae cursus elit, a condimentum est. Duis sed orci nibh.
+          Phasellus et turpis placerat, vestibulum lorem in, sodales lacus. Nam ultricies varius lorem, id vestibulum
+          enim tempus ut. Sed sagittis lacus eu eros vulputate, iaculis vulputate mauris pulvinar. Nam eget feugiat
+          diam. Etiam lacus ex, pharetra eget finibus sed, pulvinar dictum sapien.
+        </p>
+      </div>
+      <div class="col s4">
+        <h2>
+          Teste
+        </h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque in placerat leo, sed semper nunc. Maecenas
+          eget consequat erat. Vivamus ac dolor eget dui auctor commodo eget non tellus. Cras mattis urna justo, eget
+          tempor urna volutpat et. Vestibulum ultricies diam nec convallis commodo. Nullam at rhoncus ligula. Aliquam
+          tempor libero sit amet ex hendrerit bibendum. Nulla vitae cursus elit, a condimentum est. Duis sed orci nibh.
+          Phasellus et turpis placerat, vestibulum lorem in, sodales lacus. Nam ultricies varius lorem, id vestibulum
+          enim tempus ut. Sed sagittis lacus eu eros vulputate, iaculis vulputate mauris pulvinar. Nam eget feugiat
+          diam. Etiam lacus ex, pharetra eget finibus sed, pulvinar dictum sapien.
+        </p>
+      </div>
+      <div class="col s4">
+        <h2>
+          Teste
+        </h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque in placerat leo, sed semper nunc. Maecenas
+          eget consequat erat. Vivamus ac dolor eget dui auctor commodo eget non tellus. Cras mattis urna justo, eget
+          tempor urna volutpat et. Vestibulum ultricies diam nec convallis commodo. Nullam at rhoncus ligula. Aliquam
+          tempor libero sit amet ex hendrerit bibendum. Nulla vitae cursus elit, a condimentum est. Duis sed orci nibh.
+          Phasellus et turpis placerat, vestibulum lorem in, sodales lacus. Nam ultricies varius lorem, id vestibulum
+          enim tempus ut. Sed sagittis lacus eu eros vulputate, iaculis vulputate mauris pulvinar. Nam eget feugiat
+          diam. Etiam lacus ex, pharetra eget finibus sed, pulvinar dictum sapien.
+        </p>
+      </div>
+    </div>
+  </div>
 
   <div class="modal" id="login">
     <div class="modal-dialog" role="document">
@@ -83,9 +141,12 @@
     </div>
   </div>
 
+  <div id="footer"></div>
+
   <script>
     $(document).ready(function () {
       $('.modal').modal();
+      $("#footer").load("footer.html");
     });
   </script>
 
