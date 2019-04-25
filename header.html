@@ -1,4 +1,11 @@
+
+
 <!--NAVBAR -->
+<ul id="dropdown" class="dropdown-content">
+    <li><a href="#!">Meu Perfil</a></li>
+    <li><a href="#!">Configurar</a></li>
+</ul>
+
 <nav>
     <div id=nav class="nav-wrapper">
         <a href="index.html" class="brand-logo">Bricacademy</a>
@@ -26,7 +33,9 @@
             </li>
             <li id=navanuncios><a href="anuncios.html"><i class="material-icons right">reorder</i>Meus Anúncios</a>
             </li>
-            <li id=navperfil><a href="perfil.html"><i class="material-icons right">person</i>Perfil</a></li>
+            <li id=navperfil><a class="dropdown-trigger" data-target="dropdown"><i
+                        class="material-icons right">person</i>Perfil</a>
+            </li>
             <li><a href="logout.html"><i class="material-icons right">exit_to_app</i>Logout</a></li>
         </ul>
     </div>
@@ -54,6 +63,13 @@
             }, 400);
             trig = trig - 1;
 
+        });
+
+        $(".dropdown-trigger").dropdown({
+            hover: true,
+            coverTrigger: false,
+            alignment: 'center',
+            constrainWidth: false,
         });
 
         var pageUrl = window.location.pathname.split("/").pop();

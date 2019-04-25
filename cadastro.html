@@ -35,7 +35,7 @@
         <div class="valign-wrapper">
             <div class="row">
                 <h4 class="light center">Cadastro</h4>
-                <form id="formulario" name="formulario" action="#">
+                <form id="formulario" name="formulario" action="{{ route('UserController.store') }}">
                     <div class="input-field col s12">
                         <input type="text" id="username" required="" aria-required="true">
                         <label for="username">Usuário</label>
@@ -52,6 +52,11 @@
                         <input type="text" class="datepicker" id="nascimento" required="" aria-required="true">
                         <label for="nascimento">Data de Nascimento</label>
                     </div>
+                    <div class="input-field col s12">
+                        <input type="text" id="CEP" required="" aria-required="true">
+                        <label for="CEP">CEP</label>
+                    </div>
+                    <input type="submit" class="btn" id="cadastro">
                 </form>
             </div>
         </div>
